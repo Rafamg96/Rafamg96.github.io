@@ -1,0 +1,121 @@
+{
+    "nav": {
+        "about": "Sobre mí",
+        "experience": "Experiencia",
+        "skills": "Habilidades",
+        "projects": "Proyectos",
+        "blog": "Blog",
+        "contact": "Contacto"
+    },
+    "hero": {
+        "role": "Arquitecto de Datos",
+        "subtitle": "Transformando Datos en Arquitectura",
+        "description": "Basado en España, soy un Arquitecto de Datos apasionado por construir soluciones de datos escalables y ayudar a las organizaciones a aprovechar sus activos de datos de manera efectiva."
+    },
+    "experience": {
+        "title": "Experiencia",
+        "current_role": "Arquitecto de Datos Senior",
+        "company": "Nombre de la Empresa",
+        "period": "2020 - Presente",
+        "achievements": [
+            "Diseñé e implementé soluciones de arquitectura de datos empresariales",
+            "Lideré iniciativas de modelado de datos y diseño de bases de datos",
+            "Desarrollé marcos de gobierno de datos"
+        ]
+    },
+    "skills": {
+        "title": "Habilidades",
+        "categories": {
+            "data_modeling": {
+                "title": "Modelado de Datos",
+                "items": [
+                    "Diseño ERD",
+                    "Modelado Dimensional",
+                    "Data Warehousing"
+                ]
+            },
+            "technologies": {
+                "title": "Tecnologías",
+                "items": [
+                    "SQL",
+                    "Python",
+                    "Apache Spark"
+                ]
+            },
+            "tools": {
+                "title": "Herramientas",
+                "items": [
+                    "AWS/Azure",
+                    "Tableau",
+                    "Power BI"
+                ]
+            }
+        }
+    },
+    "projects": {
+        "title": "Proyectos",
+        "data_lake": {
+            "title": "Data Lake Empresarial",
+            "description": "Diseñé e implementé una solución integral de lago de datos"
+        }
+    },
+    "blog": {
+        "title": "Últimas Publicaciones",
+        "view_all": "Ver Todas las Publicaciones",
+        "read_more": "Leer Más",
+        "posts": {
+            "cicd": {
+                "title": "Introducción a CICD: Automatización de Despliegues de Arquitectura de Datos",
+                "description": "Aprende sobre Integración Continua y Despliegue Continuo en el contexto de arquitectura de datos...",
+                "date": "20 de enero de 2024",
+                "category": "DevOps",
+                "sections": {
+                    "what_is": {
+                        "title": "¿Qué es CI/CD?",
+                        "content": "La Integración Continua y el Despliegue Continuo (CI/CD) es un método para entregar aplicaciones a los clientes con frecuencia, introduciendo la automatización en las etapas de desarrollo de aplicaciones. Los principales conceptos atribuidos a CI/CD son la integración continua, la entrega continua y el despliegue continuo."
+                    },
+                    "key_components": {
+                        "title": "Componentes Clave",
+                        "items": [
+                            "Control de Versiones: Repositorios Git para rastrear cambios",
+                            "Pruebas Automatizadas: Pruebas unitarias, pruebas de integración",
+                            "Automatización de Compilación: Compilación y empaquetado automatizados",
+                            "Pipelines de Despliegue: Procesos de despliegue automatizados"
+                        ]
+                    },
+                    "benefits": {
+                        "title": "Beneficios para la Arquitectura de Datos",
+                        "items": [
+                            "Migraciones de esquemas automatizadas",
+                            "Despliegues consistentes de pipelines de datos",
+                            "Reducción de errores humanos en los despliegues",
+                            "Tiempo más rápido para producción"
+                        ]
+                    },
+                    "getting_started": {
+                        "title": "Empezando",
+                        "items": [
+                            "Elige una plataforma CI/CD (Jenkins, GitLab CI, GitHub Actions)",
+                            "Define tus etapas de pipeline",
+                            "Configura pruebas automatizadas",
+                            "Configura entornos de despliegue"
+                        ]
+                    }
+                },
+                "tags": ["CICD", "DevOps", "Automatización", "Arquitectura de Datos"]
+            }
+        }
+    },
+    "contact": {
+        "title": "Contacto",
+        "subtitle": "¿Interesado en colaborar? ¡Conectemos!",
+        "location": "España"
+    },
+    "footer": {
+        "rights": "Todos los derechos reservados."
+    },
+    "language": {
+        "en": "Inglés",
+        "es": "Español"
+    }
+}

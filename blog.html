@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Rafael Muñoz González</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="assets/js/i18n.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">DA</div>
+            <ul class="nav-links">
+                <li><a href="index.html#about" data-i18n="nav.about">About</a></li>
+                <li><a href="index.html#experience" data-i18n="nav.experience">Experience</a></li>
+                <li><a href="index.html#skills" data-i18n="nav.skills">Skills</a></li>
+                <li><a href="index.html#projects" data-i18n="nav.projects">Projects</a></li>
+                <li><a href="blog.html" class="active" data-i18n="nav.blog">Blog</a></li>
+                <li><a href="index.html#contact" data-i18n="nav.contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="blog-main">
+        <section class="blog-header">
+            <h1 data-i18n="blog.title">Data Architecture Blog</h1>
+            <p>Insights and thoughts about data architecture, best practices, and industry trends by Rafael Muñoz González</p>
+        </section>
+
+        <section class="blog-grid">
+            <article class="blog-post">
+                <div class="blog-post-image">
+                    <img src="assets/images/cicd-pipeline.svg" alt="CICD Pipeline showing automation workflow">
+                </div>
+                <div class="blog-post-content">
+                    <div class="blog-post-meta">
+                        <span class="date" data-i18n="blog.posts.cicd.date">January 20, 2024</span>
+                        <span class="category" data-i18n="blog.posts.cicd.category">DevOps</span>
+                    </div>
+                    <h2 data-i18n="blog.posts.cicd.title">CICD Introduction: Automating Data Architecture Deployments</h2>
+                    <p data-i18n="blog.posts.cicd.description">Learn about Continuous Integration and Continuous Deployment in the context of data architecture...</p>
+                    <a href="posts/cicd-introduction/en.html" class="read-more" data-i18n="blog.read_more">Read More</a>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Rafael Muñoz González. <span data-i18n="footer.rights">All rights reserved.</span></p>
+    </footer>
+</body>
+</html>

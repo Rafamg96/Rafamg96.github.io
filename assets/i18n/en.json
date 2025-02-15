@@ -1,0 +1,121 @@
+{
+    "nav": {
+        "about": "About",
+        "experience": "Experience",
+        "skills": "Skills",
+        "projects": "Projects",
+        "blog": "Blog",
+        "contact": "Contact"
+    },
+    "hero": {
+        "role": "Data Architect",
+        "subtitle": "Transforming Data Into Architecture",
+        "description": "Based in Spain, I'm a Data Architect passionate about building scalable data solutions and helping organizations leverage their data assets effectively."
+    },
+    "experience": {
+        "title": "Experience",
+        "current_role": "Senior Data Architect",
+        "company": "Company Name",
+        "period": "2020 - Present",
+        "achievements": [
+            "Designed and implemented enterprise data architecture solutions",
+            "Led data modeling and database design initiatives",
+            "Developed data governance frameworks"
+        ]
+    },
+    "skills": {
+        "title": "Skills",
+        "categories": {
+            "data_modeling": {
+                "title": "Data Modeling",
+                "items": [
+                    "ERD Design",
+                    "Dimensional Modeling",
+                    "Data Warehousing"
+                ]
+            },
+            "technologies": {
+                "title": "Technologies",
+                "items": [
+                    "SQL",
+                    "Python",
+                    "Apache Spark"
+                ]
+            },
+            "tools": {
+                "title": "Tools",
+                "items": [
+                    "AWS/Azure",
+                    "Tableau",
+                    "Power BI"
+                ]
+            }
+        }
+    },
+    "projects": {
+        "title": "Projects",
+        "data_lake": {
+            "title": "Enterprise Data Lake",
+            "description": "Designed and implemented a comprehensive data lake solution"
+        }
+    },
+    "blog": {
+        "title": "Latest Blog Posts",
+        "view_all": "View All Posts",
+        "read_more": "Read More",
+        "posts": {
+            "cicd": {
+                "title": "CICD Introduction: Automating Data Architecture Deployments",
+                "description": "Learn about Continuous Integration and Continuous Deployment in the context of data architecture...",
+                "date": "January 20, 2024",
+                "category": "DevOps",
+                "sections": {
+                    "what_is": {
+                        "title": "What is CI/CD?",
+                        "content": "Continuous Integration and Continuous Deployment (CI/CD) is a method to frequently deliver apps to customers by introducing automation into the stages of app development. The main concepts attributed to CI/CD are continuous integration, continuous delivery, and continuous deployment."
+                    },
+                    "key_components": {
+                        "title": "Key Components",
+                        "items": [
+                            "Version Control: Git repositories for tracking changes",
+                            "Automated Testing: Unit tests, integration tests",
+                            "Build Automation: Automated compilation and packaging",
+                            "Deployment Pipelines: Automated deployment processes"
+                        ]
+                    },
+                    "benefits": {
+                        "title": "Benefits for Data Architecture",
+                        "items": [
+                            "Automated schema migrations",
+                            "Consistent data pipeline deployments",
+                            "Reduced human error in deployments",
+                            "Faster time to production"
+                        ]
+                    },
+                    "getting_started": {
+                        "title": "Getting Started",
+                        "items": [
+                            "Choose a CI/CD platform (Jenkins, GitLab CI, GitHub Actions)",
+                            "Define your pipeline stages",
+                            "Set up automated testing",
+                            "Configure deployment environments"
+                        ]
+                    }
+                },
+                "tags": ["CICD", "DevOps", "Automation", "Data Architecture"]
+            }
+        }
+    },
+    "contact": {
+        "title": "Contact",
+        "subtitle": "Interested in collaborating? Let's connect!",
+        "location": "Spain"
+    },
+    "footer": {
+        "rights": "All rights reserved."
+    },
+    "language": {
+        "en": "English",
+        "es": "Spanish"
+    }
+}

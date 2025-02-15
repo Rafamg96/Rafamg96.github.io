@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="800" height="400" fill="#f8f9fa"/>
+    
+    <!-- Pipeline Stages -->
+    <g transform="translate(50, 150)">
+        <!-- Code Stage -->
+        <rect x="0" y="0" width="120" height="80" rx="10" fill="#2c3e50"/>
+        <text x="60" y="45" font-family="Arial" font-size="14" fill="white" text-anchor="middle">Code</text>
+        
+        <!-- Build Stage -->
+        <rect x="180" y="0" width="120" height="80" rx="10" fill="#3498db"/>
+        <text x="240" y="45" font-family="Arial" font-size="14" fill="white" text-anchor="middle">Build</text>
+        
+        <!-- Test Stage -->
+        <rect x="360" y="0" width="120" height="80" rx="10" fill="#2ecc71"/>
+        <text x="420" y="45" font-family="Arial" font-size="14" fill="white" text-anchor="middle">Test</text>
+        
+        <!-- Deploy Stage -->
+        <rect x="540" y="0" width="120" height="80" rx="10" fill="#e74c3c"/>
+        <text x="600" y="45" font-family="Arial" font-size="14" fill="white" text-anchor="middle">Deploy</text>
+        
+        <!-- Connecting Arrows -->
+        <path d="M 120 40 L 180 40" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+        <path d="M 300 40 L 360 40" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+        <path d="M 480 40 L 540 40" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+    </g>
+    
+    <!-- Arrow Marker -->
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+        </marker>
+    </defs>
+    
+    <!-- Title -->
+    <text x="400" y="50" font-family="Arial" font-size="24" font-weight="bold" fill="#2c3e50" text-anchor="middle">CI/CD Pipeline Workflow</text>
+</svg>
