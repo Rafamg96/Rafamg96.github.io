@@ -5,7 +5,8 @@
         "skills": "Skills",
         "projects": "Projects",
         "blog": "Blog",
-        "contact": "Contact"
+        "contact": "Contact",
+        "privacy": "Privacy"
     },
     "hero": {
         "role": "Data Architect",
@@ -113,6 +114,38 @@
     },
     "footer": {
         "rights": "All rights reserved."
+    },
+    "privacy": {
+        "title": "Privacy Policy",
+        "last_updated": "Last updated: September 24, 2025",
+        "information_collection": {
+            "title": "Information Collection",
+            "description": "This website is a personal portfolio and blog. We do not collect personal information unless you voluntarily provide it through contact forms or email."
+        },
+        "cookies": {
+            "title": "Cookies and Tracking",
+            "description": "This website may use basic analytics to understand visitor behavior. No personal identifying information is collected through these analytics."
+        },
+        "contact_info": {
+            "title": "Contact Information",
+            "description": "When you contact us through email or contact forms, we only use your information to respond to your inquiry."
+        },
+        "third_party": {
+            "title": "Third-Party Services",
+            "description": "This website may link to third-party services like LinkedIn, GitHub, and email providers. These services have their own privacy policies."
+        },
+        "data_protection": {
+            "title": "Data Protection",
+            "description": "We implement appropriate security measures to protect any information you provide to us."
+        },
+        "changes": {
+            "title": "Changes to Privacy Policy",
+            "description": "We may update this privacy policy from time to time. Any changes will be posted on this page with an updated revision date."
+        },
+        "contact": {
+            "title": "Contact Us",
+            "description": "If you have any questions about this privacy policy, please contact us at:"
+        }
     },
     "language": {
         "en": "English",

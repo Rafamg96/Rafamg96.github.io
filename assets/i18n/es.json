@@ -5,7 +5,8 @@
         "skills": "Habilidades",
         "projects": "Proyectos",
         "blog": "Blog",
-        "contact": "Contacto"
+        "contact": "Contacto",
+        "privacy": "Privacidad"
     },
     "hero": {
         "role": "Arquitecto de Datos",
@@ -113,6 +114,38 @@
     },
     "footer": {
         "rights": "Todos los derechos reservados."
+    },
+    "privacy": {
+        "title": "Política de Privacidad",
+        "last_updated": "Última actualización: 24 de septiembre de 2025",
+        "information_collection": {
+            "title": "Recopilación de Información",
+            "description": "Este sitio web es un portafolio personal y blog. No recopilamos información personal a menos que la proporciones voluntariamente a través de formularios de contacto o correo electrónico."
+        },
+        "cookies": {
+            "title": "Cookies y Seguimiento",
+            "description": "Este sitio web puede usar análisis básicos para entender el comportamiento de los visitantes. No se recopila información de identificación personal a través de estos análisis."
+        },
+        "contact_info": {
+            "title": "Información de Contacto",
+            "description": "Cuando nos contactas por correo electrónico o formularios de contacto, solo usamos tu información para responder a tu consulta."
+        },
+        "third_party": {
+            "title": "Servicios de Terceros",
+            "description": "Este sitio web puede enlazar a servicios de terceros como LinkedIn, GitHub y proveedores de correo electrónico. Estos servicios tienen sus propias políticas de privacidad."
+        },
+        "data_protection": {
+            "title": "Protección de Datos",
+            "description": "Implementamos medidas de seguridad apropiadas para proteger cualquier información que nos proporciones."
+        },
+        "changes": {
+            "title": "Cambios en la Política de Privacidad",
+            "description": "Podemos actualizar esta política de privacidad de vez en cuando. Cualquier cambio será publicado en esta página con una fecha de revisión actualizada."
+        },
+        "contact": {
+            "title": "Contáctanos",
+            "description": "Si tienes alguna pregunta sobre esta política de privacidad, por favor contáctanos en:"
+        }
     },
     "language": {
         "en": "Inglés",
