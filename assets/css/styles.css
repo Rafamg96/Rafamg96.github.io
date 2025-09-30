@@ -1,8 +1,9 @@
 :root {
-    --primary-color: #2c3e50;
-    --secondary-color: #3498db;
-    --text-color: #333;
-    --light-bg: #f8f9fa;
+    --primary-color: #1a2332;
+    --secondary-color: #2563eb;
+    --text-color: #374151;
+    --light-bg: #f9fafb;
+    --border-color: #e5e7eb;
     --spacing: 2rem;
 }
 
@@ -589,6 +590,35 @@ footer {
     .post-section ol {
         padding-left: 2rem;
     }
+
+    /* Responsive styles for new components */
+    .blog-container {
+        grid-template-columns: 1fr;
+        gap: var(--spacing);
+    }
+
+    .blog-sidebar {
+        position: static;
+    }
+
+    .about-me-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+    }
+
+    .about-me-image img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .footer-social {
+        gap: 1rem;
+    }
+
+    .hero-content h1 {
+        font-size: 1.75rem;
+    }
 }
 
 .author-info {
@@ -873,6 +903,201 @@ footer {
 
 .privacy-section .contact-info i {
     color: var(--secondary-color);
+}
+
+/* About Me Section */
+.about-me-section {
+    background: var(--light-bg);
+}
+
+.about-me-content {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.about-me-image {
+    flex-shrink: 0;
+}
+
+.about-me-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.about-me-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-color);
+}
+
+/* Footer Social Links */
+.footer-social {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.footer-social a {
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.footer-social a:hover {
+    color: var(--secondary-color);
+}
+
+/* Blog Container with Sidebar */
+.blog-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: var(--spacing);
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: calc(var(--spacing) * 2);
+}
+
+.blog-sidebar {
+    position: sticky;
+    top: 100px;
+    height: fit-content;
+}
+
+.blog-content {
+    min-width: 0;
+}
+
+/* Newsletter CTA */
+.newsletter-cta {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+    border-left: 4px solid var(--secondary-color);
+}
+
+.newsletter-cta h3 {
+    color: var(--primary-color);
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.newsletter-cta p {
+    color: var(--text-color);
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+}
+
+.newsletter-form input {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 0.95rem;
+}
+
+.newsletter-form input:focus {
+    outline: none;
+    border-color: var(--secondary-color);
+}
+
+.newsletter-form button {
+    width: 100%;
+    padding: 0.75rem;
+    background: var(--secondary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.newsletter-form button:hover {
+    background: #1d4ed8;
+}
+
+/* Blog Categories */
+.blog-categories {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.blog-categories h3 {
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.category-list {
+    list-style: none;
+}
+
+.category-list li {
+    margin-bottom: 0.5rem;
+}
+
+.category-filter {
+    display: block;
+    padding: 0.5rem 0.75rem;
+    color: var(--text-color);
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.category-filter:hover {
+    background: var(--light-bg);
+    color: var(--secondary-color);
+}
+
+.category-filter.active {
+    background: var(--secondary-color);
+    color: white;
+}
+
+/* Blog Search */
+.blog-search {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.blog-search input {
+    width: 100%;
+    padding: 1rem 3rem 1rem 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.blog-search input:focus {
+    outline: none;
+    border-color: var(--secondary-color);
+}
+
+.blog-search i {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #9ca3af;
+}
+
+/* Update blog grid to work without sidebar on blog page */
+.blog-content .blog-grid {
+    padding: 0;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
 }
 
 @media (max-width: 768px) {

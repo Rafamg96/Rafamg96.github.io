@@ -9,9 +9,10 @@
         "privacy": "Privacy"
     },
     "hero": {
+        "main_title": "Blog by Rafael Muñoz González — Modern data architectures, MLOps, DevOps and BI applied to real business.",
         "role": "Data Architect",
-        "subtitle": "Transforming Data Into Architecture",
-        "description": "Based in Spain, I'm a Data Architect passionate about building scalable data solutions and helping organizations leverage their data assets effectively."
+        "subtitle": "Practical ideas, real cases and technical guides to transform data into profitable decisions.",
+        "description": "Specialist in applied AI and data architectures, with experience in implementing Data, MLOps and BI solutions in multiple industries."
     },
     "experience": {
         "title": "Experience",
@@ -62,6 +63,18 @@
     },
     "blog": {
         "title": "Latest Blog Posts",
+        "page_title": "Blog by Rafael Muñoz González",
+        "page_subtitle": "Modern data architectures, MLOps, DevOps and BI applied to real business",
+        "categories_title": "Categories",
+        "categories": {
+            "all": "All",
+            "data": "Data",
+            "mlops": "MLOps",
+            "devops": "DevOps",
+            "architecture": "Architecture",
+            "bi": "BI"
+        },
+        "search_placeholder": "Search articles...",
         "view_all": "View All Posts",
         "read_more": "Read More",
         "posts": {
@@ -111,6 +124,17 @@
         "title": "Contact",
         "subtitle": "Interested in collaborating? Let's connect!",
         "location": "Spain"
+    },
+    "about_me": {
+        "title": "About Me",
+        "bio": "I'm Rafael Muñoz González, specialist in applied AI and data architectures, with experience in implementing Data, MLOps and BI solutions across multiple industries. My approach combines deep technical knowledge with business vision to create systems that truly generate value."
+    },
+    "newsletter": {
+        "title": "Data & AI Insights in your inbox every week",
+        "description": "Subscribe to receive articles, tutorials and practical cases directly in your email.",
+        "name_placeholder": "Your name",
+        "email_placeholder": "Your email",
+        "subscribe": "Subscribe"
     },
     "footer": {
         "rights": "All rights reserved."

@@ -9,9 +9,10 @@
         "privacy": "Privacidad"
     },
     "hero": {
+        "main_title": "Blog de Rafael Muñoz González — Arquitecturas modernas de datos, MLOps, DevOps y BI aplicados a negocio real.",
         "role": "Arquitecto de Datos",
-        "subtitle": "Transformando Datos en Arquitectura",
-        "description": "Basado en España, soy un Arquitecto de Datos apasionado por construir soluciones de datos escalables y ayudar a las organizaciones a aprovechar sus activos de datos de manera efectiva."
+        "subtitle": "Ideas prácticas, casos reales y guías técnicas para transformar datos en decisiones rentables.",
+        "description": "Especialista en IA aplicada y arquitecturas de datos, con experiencia en implementar soluciones de Data, MLOps y BI en múltiples industrias."
     },
     "experience": {
         "title": "Experiencia",
@@ -62,6 +63,18 @@
     },
     "blog": {
         "title": "Últimas Publicaciones",
+        "page_title": "Blog de Rafael Muñoz González",
+        "page_subtitle": "Arquitecturas modernas de datos, MLOps, DevOps y BI aplicados a negocio real",
+        "categories_title": "Categorías",
+        "categories": {
+            "all": "Todas",
+            "data": "Data",
+            "mlops": "MLOps",
+            "devops": "DevOps",
+            "architecture": "Arquitectura",
+            "bi": "BI"
+        },
+        "search_placeholder": "Buscar artículos...",
         "view_all": "Ver Todas las Publicaciones",
         "read_more": "Leer Más",
         "posts": {
@@ -111,6 +124,17 @@
         "title": "Contacto",
         "subtitle": "¿Interesado en colaborar? ¡Conectemos!",
         "location": "España"
+    },
+    "about_me": {
+        "title": "Sobre mí",
+        "bio": "Soy Rafael Muñoz González, especialista en IA aplicada y arquitecturas de datos, con experiencia en implementar soluciones de Data, MLOps y BI en múltiples industrias. Mi enfoque combina conocimiento técnico profundo con visión de negocio para crear sistemas que realmente generen valor."
+    },
+    "newsletter": {
+        "title": "Insights de Data & AI en tu bandeja cada semana",
+        "description": "Suscríbete para recibir artículos, tutoriales y casos prácticos directamente en tu email.",
+        "name_placeholder": "Tu nombre",
+        "email_placeholder": "Tu email",
+        "subscribe": "Suscribirse"
     },
     "footer": {
         "rights": "Todos los derechos reservados."

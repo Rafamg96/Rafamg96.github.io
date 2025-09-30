@@ -82,6 +82,14 @@ class I18n {
                 element.textContent = translation;
             }
         });
+
+        // Handle placeholder translations
+        const placeholderElements = document.querySelectorAll('[data-i18n-placeholder]');
+        placeholderElements.forEach(element => {
+            const key = element.getAttribute('data-i18n-placeholder');
+            const translation = this.getTranslation(key);
+            element.placeholder = translation;
+        });
     }
 
     getTranslation(key) {
