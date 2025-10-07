@@ -4,64 +4,184 @@
         "experience": "Experiencia",
         "skills": "Habilidades",
         "projects": "Proyectos",
+        "certifications": "Certificaciones",
         "blog": "Blog",
         "contact": "Contacto",
         "privacy": "Privacidad"
     },
     "hero": {
-        "role": "Arquitecto de Datos",
-        "subtitle": "Transformando Datos en Arquitectura",
-        "description": "Basado en España, soy un Arquitecto de Datos apasionado por construir soluciones de datos escalables y ayudar a las organizaciones a aprovechar sus activos de datos de manera efectiva."
+        "role": "Data Platform Engineer",
+        "subtitle": "Transformando Datos en Valor",
+        "description": "Ingeniero Informático con más de 6 años de experiencia en proyectos de analítica, ingeniería de datos, MLOps, DevOps y arquitectura usando el conjunto tecnológico de Azure. Construyendo plataformas de datos innovadoras y soluciones de IA con metodologías ágiles.",
+        "contact_me": "Contáctame",
+        "download_cv": "Descargar CV"
     },
     "experience": {
         "title": "Experiencia",
-        "current_role": "Arquitecto de Datos Senior",
-        "company": "Nombre de la Empresa",
-        "period": "2020 - Presente",
-        "achievements": [
-            "Diseñé e implementé soluciones de arquitectura de datos empresariales",
-            "Lideré iniciativas de modelado de datos y diseño de bases de datos",
-            "Desarrollé marcos de gobierno de datos"
-        ]
+        "job1": {
+            "role": "Senior AI Engineer (Autónomo)",
+            "company": "Autónomo",
+            "period": "Sep 2023 - Actualidad",
+            "achievements": [
+                "Diseño y desarrollo de Framework para proyectos de aprendizaje automático clásico",
+                "Soporte y mejora de flujo de trabajo de los equipos de datos e IA, proporcionando buenas prácticas",
+                "Generalización de soluciones DevOps y creación de pipelines para infraestructura"
+            ]
+        },
+        "job2": {
+            "role": "Big Data & Power BI Senior Consultant",
+            "company": "Bravent",
+            "period": "Mar 2022 - Sep 2023",
+            "achievements": [
+                "Diseño de arquitectura para plataforma de movilidad terrestre analizando datos geográficos para servicios aéreos",
+                "Implementación de plataformas de datos con sistemas ETL usando CI/CD y testing en tecnologías Microsoft",
+                "Desarrollo de cuadro de mando financiero automatizando cálculo de balances y flujos de caja"
+            ]
+        },
+        "job3": {
+            "role": "Big Data / Platform Engineer",
+            "company": "Devoteam",
+            "period": "Jun 2021 - Mar 2022",
+            "achievements": [
+                "Diseño de arquitecturas Data Vault y Kimball en proyectos de Big Data",
+                "Construcción de procesos ETL escalables en Azure Synapse Analytics y Databricks"
+            ]
+        },
+        "job4": {
+            "role": "Data Platform Specialist",
+            "company": "SolidQ (Verne Group)",
+            "period": "May 2019 - Jun 2021",
+            "achievements": [
+                "Creación de data warehouses en arquitectura Kimball y modelos analíticos para BI",
+                "Desarrollo de informes en Power BI y procesos ETL en SSIS, ADF y Synapse Analytics"
+            ]
+        }
     },
     "skills": {
-        "title": "Habilidades",
+        "title": "Habilidades y Experiencia",
         "categories": {
-            "data_modeling": {
-                "title": "Modelado de Datos",
+            "data_engineering": {
+                "title": "Ingeniería de Datos",
                 "items": [
-                    "Diseño ERD",
-                    "Modelado Dimensional",
-                    "Data Warehousing"
+                    "Diseño Data Warehouse & Lakehouse",
+                    "Pipelines ETL/ELT (ADF, Synapse, Fabric)",
+                    "Modelado Kimball & Data Vault",
+                    "Azure SQL, Databricks, Unity Catalog"
                 ]
             },
-            "technologies": {
-                "title": "Tecnologías",
+            "mlops_ai": {
+                "title": "MLOps e IA",
                 "items": [
-                    "SQL",
-                    "Python",
-                    "Apache Spark"
+                    "Desarrollo de Framework ML",
+                    "MLFlow, Azure ML, Databricks Workflows",
+                    "Monitorización de Modelos y Análisis RAI",
+                    "IA Generativa con RAG (Qdrant, LLMs)"
                 ]
             },
-            "tools": {
-                "title": "Herramientas",
+            "analytics": {
+                "title": "Analítica y BI",
                 "items": [
-                    "AWS/Azure",
-                    "Tableau",
-                    "Power BI"
+                    "Power BI (DAX, M, Power Query)",
+                    "SSAS Tabular y Multidimensional",
+                    "Modelado Analítico y Diseño de KPIs",
+                    "Tabular Editor"
+                ]
+            },
+            "devops": {
+                "title": "DevOps e IaC",
+                "items": [
+                    "Azure DevOps Pipelines, GitHub Actions",
+                    "Bicep, Terraform",
+                    "Docker, Automatización CI/CD",
+                    "Testing (Pytest, Coverage)"
+                ]
+            },
+            "development": {
+                "title": "Desarrollo",
+                "items": [
+                    "Python, PySpark, SQL",
+                    "Flask, FastAPI, Azure Functions",
+                    "Arquitectura de Microservicios",
+                    "Desarrollo y Gestión de APIs"
+                ]
+            },
+            "cloud": {
+                "title": "Cloud y Azure",
+                "items": [
+                    "Azure Fabric, Synapse Analytics",
+                    "Azure Data Lake, Blob Storage",
+                    "Azure API Management, Entra ID",
+                    "Key Vault, Managed Identities"
                 ]
             }
         }
     },
     "projects": {
-        "title": "Proyectos",
-        "data_lake": {
-            "title": "Data Lake Empresarial",
-            "description": "Diseñé e implementé una solución integral de lago de datos"
+        "title": "Proyectos Destacados",
+        "ml_framework": {
+            "title": "Framework ML para ML Clásico",
+            "description": "Diseño y desarrollo de un framework integral para proyectos de aprendizaje automático clásico con pipelines de entrenamiento, evaluación, despliegue y versionado de modelos entre entornos"
+        },
+        "mobility": {
+            "title": "Plataforma de Movilidad para Servicios Aéreos",
+            "description": "Diseño e implementación de arquitectura para plataforma de análisis de movilidad terrestre. Optimización de toma de decisiones para nuevos vertipuertos mediante análisis de datos geográficos y optimización de rutas"
+        },
+        "financial": {
+            "title": "Automatización de Cuadro de Mando Financiero",
+            "description": "Desarrollo de cuadros de mando financieros automatizados siguiendo el plan general de contabilidad, calculando balances, flujos de caja y métricas financieras clave"
+        },
+        "data_platform": {
+            "title": "Plataformas de Datos Empresariales",
+            "description": "Implementación de múltiples plataformas de datos con sistemas ETL usando CI/CD, testing y cuadros de mando BI en tecnologías Microsoft para mejorar la toma de decisiones"
+        }
+    },
+    "certifications": {
+        "title": "Certificaciones",
+        "fabric": {
+            "title": "Azure Fabric Data Engineer Associate",
+            "year": "2025",
+            "issuer": "Microsoft"
+        },
+        "admin": {
+            "title": "Azure Administrator Associate",
+            "year": "2023",
+            "issuer": "Microsoft"
+        },
+        "databricks": {
+            "title": "Databricks Lakehouse Fundamentals",
+            "year": "2022",
+            "issuer": "Databricks"
+        },
+        "dl": {
+            "title": "Especialización en Deep Learning",
+            "year": "2021",
+            "issuer": "Coursera"
+        },
+        "powerbi": {
+            "title": "Azure Power BI Data Analyst Associate",
+            "year": "2021",
+            "issuer": "Microsoft"
+        },
+        "datascience": {
+            "title": "Azure Data Scientist Associate",
+            "year": "2021",
+            "issuer": "Microsoft"
+        },
+        "dataengineer": {
+            "title": "Azure Data Engineer Associate",
+            "year": "2020",
+            "issuer": "Microsoft"
+        },
+        "scrum": {
+            "title": "Professional Scrum Master I",
+            "year": "2018",
+            "issuer": "Scrum.org"
         }
     },
     "blog": {
         "title": "Últimas Publicaciones",
+        "page_title": "Blog",
+        "page_subtitle": "Reflexiones sobre ingeniería de datos, MLOps y arquitectura en la nube",
         "view_all": "Ver Todas las Publicaciones",
         "read_more": "Leer Más",
         "posts": {
@@ -113,7 +233,11 @@
         "location": "España"
     },
     "footer": {
-        "rights": "Todos los derechos reservados."
+        "rights": "Todos los derechos reservados.",
+        "tagline": "Ingeniero de Plataforma de Datos",
+        "quick_links": "Enlaces Rápidos",
+        "resources": "Recursos",
+        "connect": "Conectar"
     },
     "privacy": {
         "title": "Política de Privacidad",

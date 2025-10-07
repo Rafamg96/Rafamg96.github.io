@@ -4,64 +4,184 @@
         "experience": "Experience",
         "skills": "Skills",
         "projects": "Projects",
+        "certifications": "Certifications",
         "blog": "Blog",
         "contact": "Contact",
         "privacy": "Privacy"
     },
     "hero": {
-        "role": "Data Architect",
-        "subtitle": "Transforming Data Into Architecture",
-        "description": "Based in Spain, I'm a Data Architect passionate about building scalable data solutions and helping organizations leverage their data assets effectively."
+        "role": "Data Platform Engineer",
+        "subtitle": "Transforming Data Into Value",
+        "description": "Computer Engineer with 6+ years of experience in analytics, data engineering, MLOps, DevOps and architecture using Azure technology stack. Building innovative data platforms and AI solutions with agile methodologies.",
+        "contact_me": "Contact Me",
+        "download_cv": "Download CV"
     },
     "experience": {
         "title": "Experience",
-        "current_role": "Senior Data Architect",
-        "company": "Company Name",
-        "period": "2020 - Present",
-        "achievements": [
-            "Designed and implemented enterprise data architecture solutions",
-            "Led data modeling and database design initiatives",
-            "Developed data governance frameworks"
-        ]
+        "job1": {
+            "role": "Senior AI Engineer (Freelance)",
+            "company": "Self-Employed",
+            "period": "Sep 2023 - Present",
+            "achievements": [
+                "Designed and developed ML Framework for classical machine learning projects",
+                "Provided support and workflow improvements for data and AI teams with best practices",
+                "Generalized DevOps solutions and created infrastructure deployment pipelines"
+            ]
+        },
+        "job2": {
+            "role": "Big Data & Power BI Senior Consultant",
+            "company": "Bravent",
+            "period": "Mar 2022 - Sep 2023",
+            "achievements": [
+                "Designed architecture for terrestrial mobility platform analyzing geographic data for air services",
+                "Implemented data platforms with ETL systems using CI/CD and testing on Microsoft technologies",
+                "Developed financial dashboards automating balance and cash flow calculations"
+            ]
+        },
+        "job3": {
+            "role": "Big Data / Platform Engineer",
+            "company": "Devoteam",
+            "period": "Jun 2021 - Mar 2022",
+            "achievements": [
+                "Designed Data Vault and Kimball architectures in Big Data projects",
+                "Built scalable ETL processes in Azure Synapse Analytics and Databricks"
+            ]
+        },
+        "job4": {
+            "role": "Data Platform Specialist",
+            "company": "SolidQ (Verne Group)",
+            "period": "May 2019 - Jun 2021",
+            "achievements": [
+                "Created data warehouses in Kimball architecture and analytical models for BI",
+                "Developed Power BI reports and ETL processes in SSIS, ADF and Synapse Analytics"
+            ]
+        }
     },
     "skills": {
-        "title": "Skills",
+        "title": "Skills & Expertise",
         "categories": {
-            "data_modeling": {
-                "title": "Data Modeling",
+            "data_engineering": {
+                "title": "Data Engineering",
                 "items": [
-                    "ERD Design",
-                    "Dimensional Modeling",
-                    "Data Warehousing"
+                    "Data Warehouse & Lakehouse Design",
+                    "ETL/ELT Pipelines (ADF, Synapse, Fabric)",
+                    "Kimball & Data Vault Modeling",
+                    "Azure SQL, Databricks, Unity Catalog"
                 ]
             },
-            "technologies": {
-                "title": "Technologies",
+            "mlops_ai": {
+                "title": "MLOps & AI",
                 "items": [
-                    "SQL",
-                    "Python",
-                    "Apache Spark"
+                    "ML Framework Development",
+                    "MLFlow, Azure ML, Databricks Workflows",
+                    "Model Monitoring & RAI Analysis",
+                    "GenAI with RAG (Qdrant, LLMs)"
                 ]
             },
-            "tools": {
-                "title": "Tools",
+            "analytics": {
+                "title": "Analytics & BI",
                 "items": [
-                    "AWS/Azure",
-                    "Tableau",
-                    "Power BI"
+                    "Power BI (DAX, M, Power Query)",
+                    "SSAS Tabular & Multidimensional",
+                    "Analytical Modeling & KPI Design",
+                    "Tabular Editor"
+                ]
+            },
+            "devops": {
+                "title": "DevOps & IaC",
+                "items": [
+                    "Azure DevOps Pipelines, GitHub Actions",
+                    "Bicep, Terraform",
+                    "Docker, CI/CD Automation",
+                    "Testing (Pytest, Coverage)"
+                ]
+            },
+            "development": {
+                "title": "Development",
+                "items": [
+                    "Python, PySpark, SQL",
+                    "Flask, FastAPI, Azure Functions",
+                    "Microservices Architecture",
+                    "API Development & Management"
+                ]
+            },
+            "cloud": {
+                "title": "Cloud & Azure",
+                "items": [
+                    "Azure Fabric, Synapse Analytics",
+                    "Azure Data Lake, Blob Storage",
+                    "Azure API Management, Entra ID",
+                    "Key Vault, Managed Identities"
                 ]
             }
         }
     },
     "projects": {
-        "title": "Projects",
-        "data_lake": {
-            "title": "Enterprise Data Lake",
-            "description": "Designed and implemented a comprehensive data lake solution"
+        "title": "Featured Projects",
+        "ml_framework": {
+            "title": "ML Framework for Classical ML",
+            "description": "Designed and developed a comprehensive framework for classical machine learning projects with training, evaluation, deployment pipelines and model versioning across environments"
+        },
+        "mobility": {
+            "title": "Air Services Mobility Platform",
+            "description": "Architecture design and implementation for terrestrial mobility analysis platform. Optimized decision-making for new vertiports by analyzing geographic data and route optimization"
+        },
+        "financial": {
+            "title": "Financial Dashboard Automation",
+            "description": "Developed automated financial dashboards following general accounting standards, calculating balances, cash flows and key financial metrics"
+        },
+        "data_platform": {
+            "title": "Enterprise Data Platforms",
+            "description": "Implemented multiple data platforms with ETL systems using CI/CD, testing, and BI dashboards on Microsoft technologies for improved decision-making"
+        }
+    },
+    "certifications": {
+        "title": "Certifications",
+        "fabric": {
+            "title": "Azure Fabric Data Engineer Associate",
+            "year": "2025",
+            "issuer": "Microsoft"
+        },
+        "admin": {
+            "title": "Azure Administrator Associate",
+            "year": "2023",
+            "issuer": "Microsoft"
+        },
+        "databricks": {
+            "title": "Databricks Lakehouse Fundamentals",
+            "year": "2022",
+            "issuer": "Databricks"
+        },
+        "dl": {
+            "title": "Deep Learning Specialization",
+            "year": "2021",
+            "issuer": "Coursera"
+        },
+        "powerbi": {
+            "title": "Azure Power BI Data Analyst Associate",
+            "year": "2021",
+            "issuer": "Microsoft"
+        },
+        "datascience": {
+            "title": "Azure Data Scientist Associate",
+            "year": "2021",
+            "issuer": "Microsoft"
+        },
+        "dataengineer": {
+            "title": "Azure Data Engineer Associate",
+            "year": "2020",
+            "issuer": "Microsoft"
+        },
+        "scrum": {
+            "title": "Professional Scrum Master I",
+            "year": "2018",
+            "issuer": "Scrum.org"
         }
     },
     "blog": {
         "title": "Latest Blog Posts",
+        "page_title": "Blog",
+        "page_subtitle": "Insights about data engineering, MLOps, and cloud architecture",
         "view_all": "View All Posts",
         "read_more": "Read More",
         "posts": {
@@ -113,7 +233,11 @@
         "location": "Spain"
     },
     "footer": {
-        "rights": "All rights reserved."
+        "rights": "All rights reserved.",
+        "tagline": "Data Platform Engineer",
+        "quick_links": "Quick Links",
+        "resources": "Resources",
+        "connect": "Connect"
     },
     "privacy": {
         "title": "Privacy Policy",

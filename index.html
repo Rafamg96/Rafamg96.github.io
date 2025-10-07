@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rafael Muñoz González - Data Architect Portfolio</title>
+    <title>Rafael Muñoz González - Data Platform Engineer Portfolio</title>
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="assets/js/i18n.js"></script>
@@ -11,12 +11,13 @@
 <body>
     <nav class="navbar">
         <div class="nav-content">
-            <div class="logo">DA</div>
+            <div class="logo">RM</div>
             <ul class="nav-links">
                 <li><a href="#about" data-i18n="nav.about">About</a></li>
                 <li><a href="#experience" data-i18n="nav.experience">Experience</a></li>
                 <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
                 <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+                <li><a href="#certifications" data-i18n="nav.certifications">Certifications</a></li>
                 <li><a href="blog.html" data-i18n="nav.blog">Blog</a></li>
                 <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
                 <li><a href="privacy.html" data-i18n="nav.privacy">Privacy</a></li>
@@ -27,13 +28,17 @@
     <header class="hero" id="about">
         <div class="hero-content">
             <h1>Rafael Muñoz González</h1>
-            <h2 data-i18n="hero.role">Data Architect</h2>
-            <p class="subtitle" data-i18n="hero.subtitle">Transforming Data Into Architecture</p>
-            <p class="hero-description" data-i18n="hero.description">Based in Spain, I'm a Data Architect passionate about building scalable data solutions and helping organizations leverage their data assets effectively.</p>
+            <h2 data-i18n="hero.role">Data Platform Engineer</h2>
+            <p class="subtitle" data-i18n="hero.subtitle">Transforming Data Into Value</p>
+            <p class="hero-description" data-i18n="hero.description">Computer Engineer with 6+ years of experience in analytics, data engineering, MLOps, DevOps and architecture using Azure technology stack. Building innovative data platforms and AI solutions with agile methodologies.</p>
+            <div class="cta-buttons">
+                <a href="#contact" class="btn-primary" data-i18n="hero.contact_me">Contact Me</a>
+                <a href="ExperienciaRafa.pdf" class="btn-secondary" download data-i18n="hero.download_cv">Download CV</a>
+            </div>
             <div class="social-links">
-                <a href="https://linkedin.com/in/rafamg96" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/rafamg96" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="mailto:rafamg96@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                <a href="https://linkedin.com/in/rafamg96" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/rafamg96" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="mailto:rafamg96@gmail.com" target="_blank" aria-label="Email"><i class="fas fa-envelope"></i></a>
             </div>
         </div>
     </header>
@@ -43,62 +48,212 @@
             <h2 data-i18n="experience.title">Experience</h2>
             <div class="timeline">
                 <div class="timeline-item">
-                    <h3 data-i18n="experience.current_role">Senior Data Architect</h3>
-                    <p class="company" data-i18n="experience.company">Company Name</p>
-                    <p class="period" data-i18n="experience.period">2020 - Present</p>
+                    <h3 data-i18n="experience.job1.role">Senior AI Engineer (Freelance)</h3>
+                    <p class="company" data-i18n="experience.job1.company">Self-Employed</p>
+                    <p class="period" data-i18n="experience.job1.period">Sep 2023 - Present</p>
                     <ul>
-                        <li data-i18n="experience.achievements.0">Designed and implemented enterprise data architecture solutions</li>
-                        <li data-i18n="experience.achievements.1">Led data modeling and database design initiatives</li>
-                        <li data-i18n="experience.achievements.2">Developed data governance frameworks</li>
+                        <li data-i18n="experience.job1.achievements.0">Designed and developed ML Framework for classical machine learning projects</li>
+                        <li data-i18n="experience.job1.achievements.1">Provided support and workflow improvements for data and AI teams with best practices</li>
+                        <li data-i18n="experience.job1.achievements.2">Generalized DevOps solutions and created infrastructure deployment pipelines</li>
                     </ul>
                 </div>
-                <!-- Add more experience items as needed -->
+                <div class="timeline-item">
+                    <h3 data-i18n="experience.job2.role">Big Data & Power BI Senior Consultant</h3>
+                    <p class="company" data-i18n="experience.job2.company">Bravent</p>
+                    <p class="period" data-i18n="experience.job2.period">Mar 2022 - Sep 2023</p>
+                    <ul>
+                        <li data-i18n="experience.job2.achievements.0">Designed architecture for terrestrial mobility platform analyzing geographic data for air services</li>
+                        <li data-i18n="experience.job2.achievements.1">Implemented data platforms with ETL systems using CI/CD and testing on Microsoft technologies</li>
+                        <li data-i18n="experience.job2.achievements.2">Developed financial dashboards automating balance and cash flow calculations</li>
+                    </ul>
+                </div>
+                <div class="timeline-item">
+                    <h3 data-i18n="experience.job3.role">Big Data / Platform Engineer</h3>
+                    <p class="company" data-i18n="experience.job3.company">Devoteam</p>
+                    <p class="period" data-i18n="experience.job3.period">Jun 2021 - Mar 2022</p>
+                    <ul>
+                        <li data-i18n="experience.job3.achievements.0">Designed Data Vault and Kimball architectures in Big Data projects</li>
+                        <li data-i18n="experience.job3.achievements.1">Built scalable ETL processes in Azure Synapse Analytics and Databricks</li>
+                    </ul>
+                </div>
+                <div class="timeline-item">
+                    <h3 data-i18n="experience.job4.role">Data Platform Specialist</h3>
+                    <p class="company" data-i18n="experience.job4.company">SolidQ (Verne Group)</p>
+                    <p class="period" data-i18n="experience.job4.period">May 2019 - Jun 2021</p>
+                    <ul>
+                        <li data-i18n="experience.job4.achievements.0">Created data warehouses in Kimball architecture and analytical models for BI</li>
+                        <li data-i18n="experience.job4.achievements.1">Developed Power BI reports and ETL processes in SSIS, ADF and Synapse Analytics</li>
+                    </ul>
+                </div>
             </div>
         </section>
 
         <section id="skills" class="section">
-            <h2 data-i18n="skills.title">Skills</h2>
+            <h2 data-i18n="skills.title">Skills & Expertise</h2>
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h3 data-i18n="skills.categories.data_modeling.title">Data Modeling</h3>
+                    <div class="skill-icon"><i class="fas fa-database"></i></div>
+                    <h3 data-i18n="skills.categories.data_engineering.title">Data Engineering</h3>
                     <ul>
-                        <li data-i18n="skills.categories.data_modeling.items.0">ERD Design</li>
-                        <li data-i18n="skills.categories.data_modeling.items.1">Dimensional Modeling</li>
-                        <li data-i18n="skills.categories.data_modeling.items.2">Data Warehousing</li>
+                        <li data-i18n="skills.categories.data_engineering.items.0">Data Warehouse & Lakehouse Design</li>
+                        <li data-i18n="skills.categories.data_engineering.items.1">ETL/ELT Pipelines (ADF, Synapse, Fabric)</li>
+                        <li data-i18n="skills.categories.data_engineering.items.2">Kimball & Data Vault Modeling</li>
+                        <li data-i18n="skills.categories.data_engineering.items.3">Azure SQL, Databricks, Unity Catalog</li>
                     </ul>
                 </div>
                 <div class="skill-category">
-                    <h3 data-i18n="skills.categories.technologies.title">Technologies</h3>
+                    <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                    <h3 data-i18n="skills.categories.mlops_ai.title">MLOps & AI</h3>
                     <ul>
-                        <li data-i18n="skills.categories.technologies.items.0">SQL</li>
-                        <li data-i18n="skills.categories.technologies.items.1">Python</li>
-                        <li data-i18n="skills.categories.technologies.items.2">Apache Spark</li>
+                        <li data-i18n="skills.categories.mlops_ai.items.0">ML Framework Development</li>
+                        <li data-i18n="skills.categories.mlops_ai.items.1">MLFlow, Azure ML, Databricks Workflows</li>
+                        <li data-i18n="skills.categories.mlops_ai.items.2">Model Monitoring & RAI Analysis</li>
+                        <li data-i18n="skills.categories.mlops_ai.items.3">GenAI with RAG (Qdrant, LLMs)</li>
                     </ul>
                 </div>
                 <div class="skill-category">
-                    <h3 data-i18n="skills.categories.tools.title">Tools</h3>
+                    <div class="skill-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3 data-i18n="skills.categories.analytics.title">Analytics & BI</h3>
                     <ul>
-                        <li data-i18n="skills.categories.tools.items.0">AWS/Azure</li>
-                        <li data-i18n="skills.categories.tools.items.1">Tableau</li>
-                        <li data-i18n="skills.categories.tools.items.2">Power BI</li>
+                        <li data-i18n="skills.categories.analytics.items.0">Power BI (DAX, M, Power Query)</li>
+                        <li data-i18n="skills.categories.analytics.items.1">SSAS Tabular & Multidimensional</li>
+                        <li data-i18n="skills.categories.analytics.items.2">Analytical Modeling & KPI Design</li>
+                        <li data-i18n="skills.categories.analytics.items.3">Tabular Editor</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon"><i class="fas fa-infinity"></i></div>
+                    <h3 data-i18n="skills.categories.devops.title">DevOps & IaC</h3>
+                    <ul>
+                        <li data-i18n="skills.categories.devops.items.0">Azure DevOps Pipelines, GitHub Actions</li>
+                        <li data-i18n="skills.categories.devops.items.1">Bicep, Terraform</li>
+                        <li data-i18n="skills.categories.devops.items.2">Docker, CI/CD Automation</li>
+                        <li data-i18n="skills.categories.devops.items.3">Testing (Pytest, Coverage)</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon"><i class="fas fa-code"></i></div>
+                    <h3 data-i18n="skills.categories.development.title">Development</h3>
+                    <ul>
+                        <li data-i18n="skills.categories.development.items.0">Python, PySpark, SQL</li>
+                        <li data-i18n="skills.categories.development.items.1">Flask, FastAPI, Azure Functions</li>
+                        <li data-i18n="skills.categories.development.items.2">Microservices Architecture</li>
+                        <li data-i18n="skills.categories.development.items.3">API Development & Management</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon"><i class="fas fa-cloud"></i></div>
+                    <h3 data-i18n="skills.categories.cloud.title">Cloud & Azure</h3>
+                    <ul>
+                        <li data-i18n="skills.categories.cloud.items.0">Azure Fabric, Synapse Analytics</li>
+                        <li data-i18n="skills.categories.cloud.items.1">Azure Data Lake, Blob Storage</li>
+                        <li data-i18n="skills.categories.cloud.items.2">Azure API Management, Entra ID</li>
+                        <li data-i18n="skills.categories.cloud.items.3">Key Vault, Managed Identities</li>
                     </ul>
                 </div>
             </div>
         </section>
 
         <section id="projects" class="section">
-            <h2 data-i18n="projects.title">Projects</h2>
+            <h2 data-i18n="projects.title">Featured Projects</h2>
             <div class="projects-grid">
                 <div class="project-card">
-                    <h3 data-i18n="projects.data_lake.title">Enterprise Data Lake</h3>
-                    <p data-i18n="projects.data_lake.description">Designed and implemented a comprehensive data lake solution</p>
+                    <div class="project-icon"><i class="fas fa-brain"></i></div>
+                    <h3 data-i18n="projects.ml_framework.title">ML Framework for Classical ML</h3>
+                    <p data-i18n="projects.ml_framework.description">Designed and developed a comprehensive framework for classical machine learning projects with training, evaluation, deployment pipelines and model versioning across environments</p>
                     <div class="tags">
-                        <span>AWS</span>
                         <span>Python</span>
-                        <span>Apache Spark</span>
+                        <span>MLFlow</span>
+                        <span>Azure ML</span>
+                        <span>Databricks</span>
                     </div>
                 </div>
-                <!-- Add more project cards as needed -->
+                <div class="project-card">
+                    <div class="project-icon"><i class="fas fa-plane"></i></div>
+                    <h3 data-i18n="projects.mobility.title">Air Services Mobility Platform</h3>
+                    <p data-i18n="projects.mobility.description">Architecture design and implementation for terrestrial mobility analysis platform. Optimized decision-making for new vertiports by analyzing geographic data and route optimization</p>
+                    <div class="tags">
+                        <span>Azure</span>
+                        <span>GeoServer</span>
+                        <span>Python</span>
+                        <span>Power BI</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon"><i class="fas fa-chart-pie"></i></div>
+                    <h3 data-i18n="projects.financial.title">Financial Dashboard Automation</h3>
+                    <p data-i18n="projects.financial.description">Developed automated financial dashboards following general accounting standards, calculating balances, cash flows and key financial metrics</p>
+                    <div class="tags">
+                        <span>Power BI</span>
+                        <span>DAX</span>
+                        <span>Azure SQL</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon"><i class="fas fa-warehouse"></i></div>
+                    <h3 data-i18n="projects.data_platform.title">Enterprise Data Platforms</h3>
+                    <p data-i18n="projects.data_platform.description">Implemented multiple data platforms with ETL systems using CI/CD, testing, and BI dashboards on Microsoft technologies for improved decision-making</p>
+                    <div class="tags">
+                        <span>Azure Synapse</span>
+                        <span>Data Factory</span>
+                        <span>Azure DevOps</span>
+                        <span>Kimball</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="certifications" class="section">
+            <h2 data-i18n="certifications.title">Certifications</h2>
+            <div class="certifications-grid">
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fab fa-microsoft"></i></div>
+                    <h3 data-i18n="certifications.fabric.title">Azure Fabric Data Engineer Associate</h3>
+                    <p class="cert-year" data-i18n="certifications.fabric.year">2025</p>
+                    <span class="cert-badge" data-i18n="certifications.fabric.issuer">Microsoft</span>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fab fa-microsoft"></i></div>
+                    <h3 data-i18n="certifications.admin.title">Azure Administrator Associate</h3>
+                    <p class="cert-year" data-i18n="certifications.admin.year">2023</p>
+                    <span class="cert-badge" data-i18n="certifications.admin.issuer">Microsoft</span>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fas fa-database"></i></div>
+                    <h3 data-i18n="certifications.databricks.title">Databricks Lakehouse Fundamentals</h3>
+                    <p class="cert-year" data-i18n="certifications.databricks.year">2022</p>
+                    <span class="cert-badge" data-i18n="certifications.databricks.issuer">Databricks</span>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fas fa-brain"></i></div>
+                    <h3 data-i18n="certifications.dl.title">Deep Learning Specialization</h3>
+                    <p class="cert-year" data-i18n="certifications.dl.year">2021</p>
+                    <span class="cert-badge" data-i18n="certifications.dl.issuer">Coursera</span>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fab fa-microsoft"></i></div>
+                    <h3 data-i18n="certifications.powerbi.title">Azure Power BI Data Analyst Associate</h3>
+                    <p class="cert-year" data-i18n="certifications.powerbi.year">2021</p>
+                    <span class="cert-badge" data-i18n="certifications.powerbi.issuer">Microsoft</span>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fab fa-microsoft"></i></div>
+                    <h3 data-i18n="certifications.datascience.title">Azure Data Scientist Associate</h3>
+                    <p class="cert-year" data-i18n="certifications.datascience.year">2021</p>
+                    <span class="cert-badge" data-i18n="certifications.datascience.issuer">Microsoft</span>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fab fa-microsoft"></i></div>
+                    <h3 data-i18n="certifications.dataengineer.title">Azure Data Engineer Associate</h3>
+                    <p class="cert-year" data-i18n="certifications.dataengineer.year">2020</p>
+                    <span class="cert-badge" data-i18n="certifications.dataengineer.issuer">Microsoft</span>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fas fa-tasks"></i></div>
+                    <h3 data-i18n="certifications.scrum.title">Professional Scrum Master I</h3>
+                    <p class="cert-year" data-i18n="certifications.scrum.year">2018</p>
+                    <span class="cert-badge" data-i18n="certifications.scrum.issuer">Scrum.org</span>
+                </div>
             </div>
         </section>
 
@@ -135,7 +290,41 @@
     </main>
 
     <footer>
-        <p>&copy; 2024 Rafael Muñoz González. <span data-i18n="footer.rights">All rights reserved.</span></p>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Rafael Muñoz González</h3>
+                <p data-i18n="footer.tagline">Data Platform Engineer</p>
+            </div>
+            <div class="footer-section">
+                <h4 data-i18n="footer.quick_links">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#about" data-i18n="nav.about">About</a></li>
+                    <li><a href="#experience" data-i18n="nav.experience">Experience</a></li>
+                    <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+                    <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4 data-i18n="footer.resources">Resources</h4>
+                <ul class="footer-links">
+                    <li><a href="blog.html" data-i18n="nav.blog">Blog</a></li>
+                    <li><a href="#certifications" data-i18n="nav.certifications">Certifications</a></li>
+                    <li><a href="privacy.html" data-i18n="nav.privacy">Privacy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4 data-i18n="footer.connect">Connect</h4>
+                <div class="footer-social">
+                    <a href="https://linkedin.com/in/rafamg96" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/rafamg96" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="mailto:rafamg96@gmail.com" target="_blank" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+                <p class="footer-email">rafamg96@gmail.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Rafael Muñoz González. <span data-i18n="footer.rights">All rights reserved.</span></p>
+        </div>
     </footer>
 </body>
 </html>
