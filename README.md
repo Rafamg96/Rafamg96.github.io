@@ -13,7 +13,6 @@ Professional portfolio website showcasing experience as a Data Platform Engineer
   - Skills & Expertise across 6 categories
   - Featured Projects showcase
   - Professional Certifications (8 certifications)
-  - Blog integration
   - Contact information
 
 ## 🛠️ Technologies Used
@@ -74,7 +73,6 @@ This is a static website hosted on GitHub Pages at `rafamg96.github.io`
 
 ```
 ├── index.html                 # Main landing page
-├── blog.html                  # Blog listing page
 ├── privacy.html               # Privacy policy page
 ├── ExperienciaRafa.pdf        # Downloadable CV
 ├── CNAME                      # Custom domain configuration
@@ -87,7 +85,6 @@ This is a static website hosted on GitHub Pages at `rafamg96.github.io`
 │   │   ├── en.json           # English translations
 │   │   └── es.json           # Spanish translations
 │   └── images/               # Images and SVG files
-└── posts/                    # Blog posts directory
 ```
 
 ## 🔧 Local Development

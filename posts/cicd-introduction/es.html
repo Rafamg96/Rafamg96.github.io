@@ -12,6 +12,11 @@
     <nav class="navbar">
         <div class="nav-content">
             <div class="logo">DA</div>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <ul class="nav-links">
                 <li><a href="../../index.html#about" data-i18n="nav.about">Sobre mí</a></li>
                 <li><a href="../../index.html#experience" data-i18n="nav.experience">Experiencia</a></li>
@@ -40,69 +45,309 @@
             <div class="post-content">
                 <figure>
                     <img src="../../assets/images/cicd-pipeline-detailed.svg" alt="Implementación de Pipeline CICD" class="featured-image">
-                    <figcaption>Vista detallada de una implementación de pipeline CI/CD</figcaption>
+                    <figcaption>Vista detallada de una implementación de pipeline CI/CD para arquitectura de datos</figcaption>
                 </figure>
                 
                 <section class="post-section">
-                    <h2 data-i18n="blog.posts.cicd.sections.what_is.title">¿Qué es CI/CD?</h2>
-                    <p data-i18n="blog.posts.cicd.sections.what_is.content">La Integración Continua y el Despliegue Continuo (CI/CD) es un método para entregar aplicaciones a los clientes con frecuencia, introduciendo la automatización en las etapas de desarrollo de aplicaciones. Los principales conceptos atribuidos a CI/CD son la integración continua, la entrega continua y el despliegue continuo.</p>
+                    <p class="intro-text">En el mundo del desarrollo de software moderno y la arquitectura de datos, la velocidad y la calidad no son negociables. Aquí es donde <strong>CI/CD</strong> (Integración Continua y Despliegue Continuo) se convierte en tu mejor aliado para transformar la forma en que entregas valor a tus usuarios.</p>
                 </section>
 
                 <section class="post-section">
-                    <h2 data-i18n="blog.posts.cicd.sections.key_components.title">Componentes Clave</h2>
+                    <h2>¿Qué es CI/CD y por qué es crucial en 2025?</h2>
+                    <p>CI/CD es una práctica de <strong>DevOps</strong> que combina la <strong>automatización</strong> de procesos de desarrollo con pipelines de entrega continua. Permite a los equipos de ingeniería entregar código a producción de manera rápida, segura y predecible.</p>
+                    
+                    <h3>Los tres pilares fundamentales:</h3>
                     <ul>
-                        <li data-i18n="blog.posts.cicd.sections.key_components.items.0"><strong>Control de Versiones:</strong> Repositorios Git para rastrear cambios</li>
-                        <li data-i18n="blog.posts.cicd.sections.key_components.items.1"><strong>Pruebas Automatizadas:</strong> Pruebas unitarias, pruebas de integración</li>
-                        <li data-i18n="blog.posts.cicd.sections.key_components.items.2"><strong>Automatización de Compilación:</strong> Compilación y empaquetado automatizados</li>
-                        <li data-i18n="blog.posts.cicd.sections.key_components.items.3"><strong>Pipelines de Despliegue:</strong> Procesos de despliegue automatizados</li>
+                        <li><strong>Integración Continua (CI):</strong> Fusión automática y frecuente del código en un repositorio compartido, seguida de pruebas automatizadas</li>
+                        <li><strong>Entrega Continua (CD):</strong> El código está siempre listo para desplegar en producción con un clic</li>
+                        <li><strong>Despliegue Continuo (CD):</strong> Cada cambio que pasa las pruebas se despliega automáticamente a producción</li>
+                    </ul>
+
+                    <p>En términos simples: <em>escribes código → se prueba automáticamente → se despliega sin intervención manual</em>. Todo esto sucede en minutos, no en días.</p>
+                </section>
+
+                <section class="post-section">
+                    <h2>Componentes Esenciales de un Pipeline CI/CD</h2>
+                    <p>Un pipeline moderno de CI/CD consta de varios componentes que trabajan en armonía:</p>
+                    
+                    <h3>1. Control de Versiones (Version Control System)</h3>
+                    <p>La base de todo pipeline CI/CD. <strong>Git</strong> es el estándar de facto, integrado con plataformas como:</p>
+                    <ul>
+                        <li><strong>GitHub:</strong> La opción más popular con GitHub Actions integrado</li>
+                        <li><strong>GitLab:</strong> Solución completa con CI/CD nativo</li>
+                        <li><strong>Bitbucket:</strong> Ideal para equipos que usan Jira y Confluence</li>
+                    </ul>
+
+                    <h3>2. Automatización de Pruebas (Testing Automation)</h3>
+                    <p>Las pruebas son el corazón de la calidad en CI/CD:</p>
+                    <ul>
+                        <li><strong>Pruebas Unitarias:</strong> Validan funciones individuales del código</li>
+                        <li><strong>Pruebas de Integración:</strong> Verifican que los componentes funcionen juntos</li>
+                        <li><strong>Pruebas de Regresión:</strong> Aseguran que nuevos cambios no rompan funcionalidades existentes</li>
+                        <li><strong>Pruebas de Seguridad:</strong> Escaneo de vulnerabilidades con herramientas como SonarQube o Snyk</li>
+                    </ul>
+
+                    <h3>3. Build Automation (Automatización de Compilación)</h3>
+                    <p>Compilación, empaquetado y creación de artefactos desplegables de forma automática. Herramientas populares incluyen:</p>
+                    <ul>
+                        <li>Docker para containerización</li>
+                        <li>Maven/Gradle para proyectos Java</li>
+                        <li>npm/yarn para JavaScript/TypeScript</li>
+                        <li>Poetry/pip para Python</li>
+                    </ul>
+
+                    <h3>4. Pipeline de Deploy (Deployment Pipeline)</h3>
+                    <p>El proceso automatizado que lleva tu código desde desarrollo hasta producción, típicamente a través de múltiples entornos:</p>
+                    <ul>
+                        <li><strong>Desarrollo (Dev):</strong> Entorno para pruebas iniciales</li>
+                        <li><strong>Staging/QA:</strong> Réplica de producción para validación final</li>
+                        <li><strong>Producción (Prod):</strong> Entorno donde los usuarios finales acceden a la aplicación</li>
                     </ul>
                 </section>
 
                 <section class="post-section">
-                    <h2 data-i18n="blog.posts.cicd.sections.benefits.title">Beneficios para la Arquitectura de Datos</h2>
-                    <p>En el contexto de la arquitectura de datos, CI/CD aporta varias ventajas:</p>
+                    <h2>Plataformas CI/CD: ¿Cuál elegir?</h2>
+                    <p>El mercado ofrece múltiples opciones, cada una con sus ventajas:</p>
+
+                    <h3><i class="fab fa-github"></i> GitHub Actions</h3>
+                    <p><strong>Ideal para:</strong> Proyectos open source y equipos que ya usan GitHub</p>
                     <ul>
-                        <li data-i18n="blog.posts.cicd.sections.benefits.items.0">Migraciones de esquemas automatizadas</li>
-                        <li data-i18n="blog.posts.cicd.sections.benefits.items.1">Despliegues consistentes de pipelines de datos</li>
-                        <li data-i18n="blog.posts.cicd.sections.benefits.items.2">Reducción de errores humanos en los despliegues</li>
-                        <li data-i18n="blog.posts.cicd.sections.benefits.items.3">Tiempo más rápido para producción</li>
+                        <li>✅ Integración nativa con GitHub</li>
+                        <li>✅ Marketplace con miles de actions reutilizables</li>
+                        <li>✅ Minutos gratis generosos para repositorios públicos</li>
+                        <li>✅ Sintaxis YAML intuitiva</li>
+                    </ul>
+                    <pre><code># Ejemplo de GitHub Actions
+name: CI Pipeline
+on: [push, pull_request]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run tests
+        run: npm test
+      - name: Deploy
+        run: npm run deploy</code></pre>
+
+                    <h3><i class="fas fa-code-branch"></i> GitLab CI/CD</h3>
+                    <p><strong>Ideal para:</strong> Equipos que buscan una solución DevOps completa</p>
+                    <ul>
+                        <li>✅ Pipeline visual integrado</li>
+                        <li>✅ Auto DevOps para configuración automática</li>
+                        <li>✅ Runners propios para más control</li>
+                        <li>✅ Excelente para self-hosted</li>
+                    </ul>
+
+                    <h3><i class="fas fa-gear"></i> Jenkins</h3>
+                    <p><strong>Ideal para:</strong> Grandes empresas con necesidades de personalización extrema</p>
+                    <ul>
+                        <li>✅ Altamente configurable y extensible</li>
+                        <li>✅ Miles de plugins disponibles</li>
+                        <li>✅ Open source y gratuito</li>
+                        <li>⚠️ Requiere más mantenimiento</li>
+                    </ul>
+
+                    <h3>Otras opciones populares:</h3>
+                    <ul>
+                        <li><strong>CircleCI:</strong> Rápido y fácil de configurar</li>
+                        <li><strong>Travis CI:</strong> Popular en proyectos open source</li>
+                        <li><strong>Azure DevOps:</strong> Integración perfecta con el ecosistema Microsoft</li>
+                        <li><strong>AWS CodePipeline:</strong> Nativo de AWS con integración profunda</li>
                     </ul>
                 </section>
 
                 <section class="post-section">
-                    <h2 data-i18n="blog.posts.cicd.sections.getting_started.title">Empezando</h2>
-                    <p>Para implementar CI/CD en tus proyectos de arquitectura de datos:</p>
+                    <h2>CI/CD en Arquitectura de Datos: Un Cambio de Juego</h2>
+                    <p>La aplicación de CI/CD en proyectos de datos es especialmente poderosa. Transforma la manera en que gestionamos pipelines de datos, migraciones de esquemas y despliegues de infraestructura.</p>
+
+                    <h3>Beneficios concretos para Data Engineering:</h3>
+                    <ul>
+                        <li><strong>🔄 Migraciones de Esquemas Automatizadas:</strong> Herramientas como Flyway o Liquibase se ejecutan automáticamente en cada deploy</li>
+                        <li><strong>📊 Despliegues Consistentes de Pipelines:</strong> Airflow DAGs, dbt models, o Spark jobs se despliegan con versionado completo</li>
+                        <li><strong>🛡️ Reducción de Errores Humanos:</strong> Las validaciones automáticas detectan problemas antes de producción</li>
+                        <li><strong>⚡ Time-to-Market Acelerado:</strong> Cambios en producción en horas, no en semanas</li>
+                        <li><strong>🔍 Trazabilidad Completa:</strong> Cada cambio está documentado y es reversible</li>
+                        <li><strong>🧪 Testing de Calidad de Datos:</strong> Great Expectations o Soda Core se integran en el pipeline</li>
+                    </ul>
+
+                    <h3>Ejemplo práctico: Pipeline CI/CD para dbt</h3>
+                    <pre><code># .github/workflows/dbt-deploy.yml
+name: dbt Production Deploy
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Install dbt
+        run: pip install dbt-core dbt-snowflake
+      
+      - name: Run dbt tests
+        run: dbt test --profiles-dir .
+      
+      - name: Deploy to production
+        run: dbt run --profiles-dir . --target prod
+      
+      - name: Generate documentation
+        run: dbt docs generate</code></pre>
+                </section>
+
+                <section class="post-section">
+                    <h2>Guía Paso a Paso: Implementa tu Primer Pipeline CI/CD</h2>
+                    <p>Te guío a través del proceso de crear un pipeline CI/CD básico pero profesional:</p>
+
+                    <h3>Paso 1: Preparación del Repositorio</h3>
                     <ol>
-                        <li data-i18n="blog.posts.cicd.sections.getting_started.items.0">Elige una plataforma CI/CD (Jenkins, GitLab CI, GitHub Actions)</li>
-                        <li data-i18n="blog.posts.cicd.sections.getting_started.items.1">Define tus etapas de pipeline</li>
-                        <li data-i18n="blog.posts.cicd.sections.getting_started.items.2">Configura pruebas automatizadas</li>
-                        <li data-i18n="blog.posts.cicd.sections.getting_started.items.3">Configura entornos de despliegue</li>
+                        <li>Crea un repositorio en GitHub/GitLab</li>
+                        <li>Estructura tu proyecto con buenas prácticas:
+                            <ul>
+                                <li><code>/src</code> - Código fuente</li>
+                                <li><code>/tests</code> - Pruebas automatizadas</li>
+                                <li><code>/docs</code> - Documentación</li>
+                                <li><code>/.github/workflows</code> - Definiciones de CI/CD</li>
+                            </ul>
+                        </li>
+                        <li>Configura un archivo <code>.gitignore</code> apropiado</li>
                     </ol>
+
+                    <h3>Paso 2: Define las Etapas del Pipeline</h3>
+                    <p>Un pipeline típico incluye estas etapas:</p>
+                    <ol>
+                        <li><strong>Checkout:</strong> Obtener el código del repositorio</li>
+                        <li><strong>Build:</strong> Compilar y construir artefactos</li>
+                        <li><strong>Test:</strong> Ejecutar suite de pruebas</li>
+                        <li><strong>Security Scan:</strong> Análisis de vulnerabilidades</li>
+                        <li><strong>Deploy to Staging:</strong> Despliegue a entorno de pruebas</li>
+                        <li><strong>Smoke Tests:</strong> Validación básica post-deploy</li>
+                        <li><strong>Deploy to Production:</strong> Despliegue final (puede requerir aprobación manual)</li>
+                    </ol>
+
+                    <h3>Paso 3: Configura las Pruebas Automatizadas</h3>
+                    <p>Las pruebas son no negociables. Configura al menos:</p>
+                    <ul>
+                        <li><strong>Linting:</strong> ESLint, Pylint, o Rubocop para estilo de código</li>
+                        <li><strong>Unit Tests:</strong> Jest, pytest, JUnit según tu lenguaje</li>
+                        <li><strong>Code Coverage:</strong> Objetivo mínimo del 80%</li>
+                        <li><strong>Integration Tests:</strong> Validación de APIs y servicios externos</li>
+                    </ul>
+
+                    <h3>Paso 4: Configura los Entornos de Despliegue</h3>
+                    <p>Separa tus entornos con variables y secretos específicos:</p>
+                    <ul>
+                        <li>Usa <strong>GitHub Secrets</strong> o <strong>GitLab CI/CD Variables</strong> para credenciales</li>
+                        <li>Nunca commits hardcodees contraseñas o API keys</li>
+                        <li>Configura diferentes archivos de entorno (<code>.env.dev</code>, <code>.env.prod</code>)</li>
+                        <li>Implementa <strong>Infrastructure as Code</strong> (Terraform, CloudFormation)</li>
+                    </ul>
+
+                    <h3>Paso 5: Monitoreo y Observabilidad</h3>
+                    <p>Un pipeline CI/CD no termina en el deploy:</p>
+                    <ul>
+                        <li>Integra herramientas de monitoreo (Datadog, New Relic, Prometheus)</li>
+                        <li>Configura alertas para fallos en pipeline</li>
+                        <li>Implementa logging estructurado</li>
+                        <li>Define métricas clave (deployment frequency, lead time, MTTR)</li>
+                    </ul>
+                </section>
+
+                <section class="post-section">
+                    <h2>Mejores Prácticas y Lecciones Aprendidas</h2>
+                    <p>Después de implementar decenas de pipelines CI/CD, estos son los consejos más valiosos:</p>
+
+                    <h3>✅ DO (Haz esto):</h3>
+                    <ul>
+                        <li><strong>Mantén los pipelines rápidos:</strong> Objetivo: menos de 10 minutos</li>
+                        <li><strong>Falla rápido:</strong> Las validaciones más rápidas primero</li>
+                        <li><strong>Paraleliza:</strong> Ejecuta pruebas en paralelo cuando sea posible</li>
+                        <li><strong>Versiona todo:</strong> Código, configuración, infraestructura</li>
+                        <li><strong>Documenta:</strong> README claro con instrucciones de setup</li>
+                        <li><strong>Implementa rollback automático:</strong> Si algo falla, vuelve atrás automáticamente</li>
+                    </ul>
+
+                    <h3>❌ DON'T (Evita esto):</h3>
+                    <ul>
+                        <li><strong>No ignores tests que fallan:</strong> Si falla, arréglalo inmediatamente</li>
+                        <li><strong>No deploys los viernes:</strong> Da tiempo para resolver problemas</li>
+                        <li><strong>No pipeline sin tests:</strong> Es como conducir sin cinturón</li>
+                        <li><strong>No commits directos a main:</strong> Usa Pull Requests siempre</li>
+                        <li><strong>No secretos en el código:</strong> Usa gestores de secretos (AWS Secrets Manager, HashiCorp Vault)</li>
+                    </ul>
+                </section>
+
+                <section class="post-section">
+                    <h2>El Futuro de CI/CD: Tendencias 2025</h2>
+                    <p>El campo de CI/CD continúa evolucionando:</p>
+                    <ul>
+                        <li><strong>GitOps:</strong> Infraestructura declarativa gestionada vía Git (ArgoCD, Flux)</li>
+                        <li><strong>AI-Powered Testing:</strong> IA que genera y optimiza tests automáticamente</li>
+                        <li><strong>Progressive Delivery:</strong> Canary deployments y feature flags avanzados</li>
+                        <li><strong>Platform Engineering:</strong> Plataformas internas de desarrollador (IDPs)</li>
+                        <li><strong>Security-First:</strong> DevSecOps con shift-left security</li>
+                    </ul>
+                </section>
+
+                <section class="post-section">
+                    <h2>Conclusión: Tu Próximo Paso</h2>
+                    <p>Implementar CI/CD no es opcional en 2025, es una <strong>necesidad estratégica</strong>. Los equipos que dominan la automatización de pipelines no solo entregan más rápido, sino que duermen mejor por las noches.</p>
+                    
+                    <p><strong>Empieza pequeño:</strong> No necesitas un pipeline perfecto desde el día uno. Comienza con:</p>
+                    <ol>
+                        <li>Automatiza tus tests</li>
+                        <li>Añade un deploy automático a staging</li>
+                        <li>Itera y mejora continuamente</li>
+                    </ol>
+
+                    <p>¿Listo para transformar tu workflow de desarrollo? El momento de empezar es ahora. 🚀</p>
+
+                    <p><em>¿Tienes preguntas sobre CI/CD o quieres compartir tu experiencia? Contáctame en <a href="https://linkedin.com/in/rafamg96">LinkedIn</a> o déjame un comentario.</em></p>
                 </section>
             </div>
 
-            <footer class="post-footer">
-                <div class="tags">
-                    <span data-i18n="blog.posts.cicd.tags.0">CICD</span>
-                    <span data-i18n="blog.posts.cicd.tags.1">DevOps</span>
-                    <span data-i18n="blog.posts.cicd.tags.2">Automatización</span>
-                    <span data-i18n="blog.posts.cicd.tags.3">Arquitectura de Datos</span>
-                </div>
-                <nav class="share-buttons" aria-label="Compartir en redes sociales">
-                    <a href="#" class="share-button" aria-label="Compartir en Twitter"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="share-button" aria-label="Compartir en LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" class="share-button" aria-label="Compartir en Facebook"><i class="fab fa-facebook"></i></a>
-                </nav>
-            </footer>
         </article>
     </main>
 
     <footer>
-        <div class="author-contact">
-            <p><i class="fas fa-envelope"></i> rafamg96@gmail.com</p>
-            <p><i class="fas fa-location-dot"></i> <span data-i18n="contact.location">España</span></p>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Rafael Muñoz González</h3>
+                <p data-i18n="footer.tagline">Data Platform Engineer</p>
+            </div>
+            <div class="footer-section">
+                <h4 data-i18n="footer.quick_links">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="../../index.html#about" data-i18n="nav.about">Sobre mí</a></li>
+                    <li><a href="../../index.html#experience" data-i18n="nav.experience">Experiencia</a></li>
+                    <li><a href="../../index.html#skills" data-i18n="nav.skills">Habilidades</a></li>
+                    <li><a href="../../index.html#projects" data-i18n="nav.projects">Proyectos</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4 data-i18n="footer.resources">Resources</h4>
+                <ul class="footer-links">
+                    <li><a href="../../blog.html" data-i18n="nav.blog">Blog</a></li>
+                    <li><a href="../../index.html#certifications" data-i18n="nav.certifications">Certifications</a></li>
+                    <li><a href="../../privacy.html" data-i18n="nav.privacy">Privacy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4 data-i18n="footer.connect">Connect</h4>
+                <div class="footer-social">
+                    <a href="https://linkedin.com/in/rafamg96" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/rafamg96" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="mailto:rafamg96@gmail.com" target="_blank" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+                <p class="footer-email">rafamg96@gmail.com</p>
+            </div>
         </div>
-        <p>&copy; 2024 Rafael Muñoz González. <span data-i18n="footer.rights">Todos los derechos reservados.</span></p>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Rafael Muñoz González. <span data-i18n="footer.rights">All rights reserved.</span></p>
+        </div>
     </footer>
+    <script src="../../assets/js/menu.js"></script>
 </body>
 </html>

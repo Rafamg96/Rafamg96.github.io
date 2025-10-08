@@ -23,29 +23,50 @@ class I18n {
     }
 
     addLanguageSwitcher() {
+        const existingSwitcher = document.querySelector('.language-switcher');
+        if (existingSwitcher) {
+            // If switcher already exists in HTML, just add event listeners
+            const langButtons = document.querySelectorAll('.lang-btn');
+            langButtons.forEach(btn => {
+                if (btn.getAttribute('data-lang') === this.currentLang) {
+                    btn.classList.add('active');
+                }
+                btn.addEventListener('click', () => {
+                    const lang = btn.getAttribute('data-lang');
+                    this.updateLanguage(lang);
+                    this.updateActiveButton(lang);
+                    
+                    if (this.isPostPage) {
+                        this.switchPostLanguage(lang);
+                    } else {
+                        this.updatePostLinks(lang);
+                    }
+                });
+            });
+            return;
+        }
+
+        // Fallback: create switcher if not in HTML
         const nav = document.querySelector('.nav-links');
         const switcher = document.createElement('li');
         switcher.className = 'language-switcher';
         switcher.innerHTML = `
-            <button id="langButton">${this.currentLang.toUpperCase()}</button>
+            <button class="lang-btn" data-lang="es" title="Español">🇪🇸 ES</button>
+            <button class="lang-btn" data-lang="en" title="English">🇬🇧 EN</button>
         `;
         nav.appendChild(switcher);
-
-        document.getElementById('langButton').addEventListener('click', () => {
-            this.toggleLanguage();
-        });
+        
+        this.addLanguageSwitcher();
     }
 
-    toggleLanguage() {
-        const newLang = this.currentLang === 'en' ? 'es' : 'en';
-        this.updateLanguage(newLang);
-        document.getElementById('langButton').textContent = newLang.toUpperCase();
-        
-        if (this.isPostPage) {
-            this.switchPostLanguage(newLang);
-        } else {
-            this.updatePostLinks(newLang);
-        }
+    updateActiveButton(lang) {
+        const langButtons = document.querySelectorAll('.lang-btn');
+        langButtons.forEach(btn => {
+            btn.classList.remove('active');
+            if (btn.getAttribute('data-lang') === lang) {
+                btn.classList.add('active');
+            }
+        });
     }
 
     switchPostLanguage(lang) {
